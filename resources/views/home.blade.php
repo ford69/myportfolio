@@ -91,15 +91,19 @@
                 <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
                     <div>
 
-                            <h1 class=" text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-                                Clifford Kwaku Kyereme
-                                <span class="relative inline-flex sm:inline">
-                                    <span class="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-                                    <span class="relative"> Manu </span>
-                                </span>
-                            </h1>
-                        <p class="mt-4 text-lg font-normal text-gray-400 sm:mt-8">Im a software Developer From Ghana. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, praesentium? Corrupti quisquam, asperiores earum ea praesentium cum accusantium. Porro voluptates voluptatum, ex fugiat eum blanditiis ab temporibus? Quos, adipisci voluptate?
-                            </p>
+                        <h1 class=" text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+                            Clifford Kwaku Kyereme
+                            <span class="relative inline-flex sm:inline">
+                                <span
+                                    class="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
+                                <span class="relative"> Manu </span>
+                            </span>
+                        </h1>
+                        <p class="mt-4 text-lg font-normal text-gray-400 sm:mt-8">Im a software Developer From Ghana.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, praesentium? Corrupti
+                            quisquam, asperiores earum ea praesentium cum accusantium. Porro voluptates voluptatum, ex
+                            fugiat eum blanditiis ab temporibus? Quos, adipisci voluptate?
+                        </p>
 
                         <form action="#" method="POST" class="relative mt-8 rounded-full sm:mt-12">
                             <div class="relative">
@@ -136,7 +140,8 @@
                             <svg class="blur-3xl filter opacity-70" style="filter: blur(64px)" width="444"
                                 height="536" viewBox="0 0 444 536" fill="none"
                                 xmlns="{{ asset('images/ico/tide.jpeg') }}">
-                                <path d="M225.919 112.719C343.98 64.6648 389.388 -70.487 437.442 47.574C485.496 165.635 253.266 481.381 135.205 529.435C17.1445 577.488 57.9596 339.654 9.9057 221.593C-38.1482 103.532 107.858 160.773 225.919 112.719Z"
+                                <path
+                                    d="M225.919 112.719C343.98 64.6648 389.388 -70.487 437.442 47.574C485.496 165.635 253.266 481.381 135.205 529.435C17.1445 577.488 57.9596 339.654 9.9057 221.593C-38.1482 103.532 107.858 160.773 225.919 112.719Z"
                                     fill="url(#c)" />
                                 <defs>
                                     <linearGradient id="c" x1="82.7339" y1="550.792" x2="-39.945"
@@ -175,7 +180,9 @@
                                     <i class="fas fa-award"></i>
                                 </div>
                                 <h6 class="text-xl text-white font-semibold">
-                                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600"> Front End Engineer </span>
+                                    <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">
+                                        Front End Engineer </span>
                                 </h6>
                                 <p class="mt-2 mb-4 text-gray-400">
                                     Empowering users with seamless and responsive web applications, leveraging Vue.js,
@@ -194,7 +201,9 @@
                                     <i class="fas fa-retweet"></i>
                                 </div>
                                 <h6 class="text-xl text-white font-semibold">
-                                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600"> Mobile App Developer </span>
+                                    <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">
+                                        Mobile App Developer </span>
                                 </h6>
                                 <p class="mt-2 mb-4 text-gray-400">
                                     Proficient in Flutter development.Creating sleek, cross-platform applications with
@@ -212,7 +221,9 @@
                                     <i class="fas fa-fingerprint"></i>
                                 </div>
                                 <h6 class="text-xl text-white font-semibold">
-                                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">UX/UI Designer </span>
+                                    <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">UX/UI
+                                        Designer </span>
                                 </h6>
                                 <p class="mt-2 mb-4 text-gray-400">
                                     Crafting captivating digital experiences through intuitive design solutions that
@@ -229,7 +240,8 @@
                             <i class="fas fa-user-friends text-xl"></i>
                         </div>
                         <h3 class="text-3xl mb-2 text-white font-semibold leading-normal">
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600"> Want to Know more about me ? </span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">
+                                Want to Know more about me ? </span>
                         </h3>
                         <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-400">
                             Don't let your uses guess by attaching tooltips and popoves to
@@ -350,7 +362,9 @@
         <section id="repos" class="relative bg-black px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
             <div class="">
                 <h2 class="text-3xl text-white leading-tight font-bold">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">Projects </span></h2>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">Projects
+                    </span>
+                </h2>
                 <p class="text-gray-400 mt-2 md:max-w-lg">These are some projects i contributed to and built</p>
 
                 <a href="#" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">View
@@ -471,7 +485,7 @@
         </section>
 
         <!-- not -->
-        <section  class="pb-20 relative block bg-gray-900">
+        <section class="pb-20 relative block bg-gray-900">
             <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
                 style="height: 80px;">
                 <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +497,8 @@
                 <div class="flex flex-wrap text-center justify-center">
                     <div class="w-full lg:w-6/12 px-4">
                         <h2 class="text-4xl font-semibold text-white">
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600"> Want to connect ? </span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">
+                                Want to connect ? </span>
                         </h2>
                         <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                             Put the potentially record low maximum sea ice extent tihs year
@@ -545,37 +560,52 @@
                                 <p class="leading-relaxed mt-1 mb-4 text-gray-200">
                                     Complete this form and we will get back to you in 24 hours.
                                 </p>
-                                <div class="relative w-full mb-3 mt-8">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="full-name">Full Name</label><input type="text"
-                                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                        placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
-                                </div>
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="email">Email</label><input type="email"
-                                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                        placeholder="Email" style="transition: all 0.15s ease 0s;" />
-                                </div>
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="message">Message</label>
-                                    <textarea rows="4" cols="80"
-                                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                        placeholder="Type a message..."></textarea>
-                                </div>
-                                <div class="text-center mt-6">
-                                    <button
-                                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                        type="button" style="transition: all 0.15s ease 0s;">
-                                        Send Message
-                                    </button>
+                                {{-- Email Form --}}
+                                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                                    @if (session('success'))
+                                        <div class="alert alert-success text-green-600">
+                                            {{ session('success') }}
+                                        </div>
+                                    @elseif(session('error'))
+                                        <div class="alert alert-danger text-red-600">
+                                            {{ session('error') }}
+                                        </div>
+                                    @endif
+                                    <form class="need-validation" action="{{ url('/home/send') }}" role="form"
+                                        method="POST">
+                                        @csrf
+                                        <div class="relative w-full mb-3 mt-8">
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                for="full-name">Full Name</label><input type="text"
+                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                                placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                for="email">Email</label><input type="email"
+                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                                placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                for="message">Message</label>
+                                            <textarea rows="4" cols="80"
+                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                                placeholder="Type a message..."></textarea>
+                                        </div>
+                                        <div class="text-center mt-6">
+                                            <a href="#"
+                                                class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                                role="button" style="transition: all 0.15s ease 0s;">
+                                                Send Message
+                                            </a>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <footer class="relative bg-black pt-8 pb-6">
             <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -664,7 +694,8 @@
                     <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                         <div class="text-sm text-gray-600 font-semibold py-1">
                             Copyright © 2024 My Portfolio Website by
-                            <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Clifford Manu</a>.
+                            <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Clifford
+                                Manu</a>.
                         </div>
                     </div>
                 </div>
@@ -674,21 +705,21 @@
 
     <script>
         // Add smooth scrolling behavior to the navigation links
-    document.querySelectorAll('.nav-link').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-    });
     </script>
 
 
