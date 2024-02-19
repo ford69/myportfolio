@@ -13,8 +13,10 @@ class SendMailController extends Controller
     public function sendMail(Request $request){
         Log::debug("[SendMailController]: hit");
 
+        Log::info(json_encode($request));
+
         $request->validate([
-            'fullname' => 'required|string|max:30',
+            'full-name' => 'required|string|max:30',
             'email' => 'required|string|max:30',
             'message' => 'required|string',
         ]);
@@ -22,7 +24,7 @@ class SendMailController extends Controller
         Log::debug("[SendMailController]: validated");
 
         $data = array(
-            'fullname' => $request->fullname,
+            'full-name' => $request->fullname,
             'email' => $request->email,
             'message' => $request->mesage
         );

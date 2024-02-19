@@ -9,12 +9,12 @@
 
 <body>
     <div class="">
-        <header class="py-4 bg-black sm:py-6" x-data="{ expanded: false }">
+        <header class="py-4 bg-black sm:py-6 fixed top-0 w-full z-10" x-data="{ expanded: false }">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between">
                     <div class="shrink-0">
                         <a href="#" title="" class="flex">
-                            <img class="w-auto h-11" src="{{ asset('images/ico/tide.jpeg') }}" alt="" />
+                            <img class=" w-36 h-auto" src="{{ asset('images/ico/tide-logo-white.png') }}" alt="" />
                         </a>
                     </div>
 
@@ -86,7 +86,7 @@
             </div>
         </header>
 
-        <section id="home" class="relative py-12 overflow-hidden bg-black sm:pb-16 lg:pb-20 xl:pb-24">
+        <section id="home" class="relative py-36 overflow-hidden bg-black sm:pb-16 lg:pb-20 xl:pb-24">
             <div class="px-4 mx-auto relativea sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
                     <div>
@@ -161,7 +161,7 @@
                                 alt="" />
                         </div>
 
-                        {{-- <img class="relative w-full max-w-md mx-auto" src="{{ asset('images/IMG_7744.jpg') }}"
+                        {{-- <img class="relative w-full max-w-md mx-auto" src="{{ asset('images/person-try.png') }}"
                             alt="" /> --}}
                     </div>
                 </div>
@@ -556,57 +556,57 @@
                         <div
                             class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gradient-to-r from-cyan-500 to-purple-500 bg-gray-300">
                             <div class="flex-auto p-5 lg:p-10">
-                                <h4 class="text-2xl text-white font-semibold">Want to work with us?</h4>
+                                <h4 class="text-2xl text-white font-semibold">Want to work with me?</h4>
                                 <p class="leading-relaxed mt-1 mb-4 text-gray-200">
                                     Complete this form and we will get back to you in 24 hours.
                                 </p>
-                                {{-- Email Form --}}
-                                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                                    @if (session('success'))
-                                        <div class="alert alert-success text-green-600">
-                                            {{ session('success') }}
-                                        </div>
-                                    @elseif(session('error'))
-                                        <div class="alert alert-danger text-red-600">
-                                            {{ session('error') }}
-                                        </div>
-                                    @endif
-                                    <form class="need-validation" action="{{ url('/home/send') }}" role="form"
-                                        method="POST">
-                                        @csrf
-                                        <div class="relative w-full mb-3 mt-8">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                for="full-name">Full Name</label><input type="text"
-                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                                placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
-                                        </div>
-                                        <div class="relative w-full mb-3">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                for="email">Email</label><input type="email"
-                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                                placeholder="Email" style="transition: all 0.15s ease 0s;" />
-                                        </div>
-                                        <div class="relative w-full mb-3">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                for="message">Message</label>
-                                            <textarea rows="4" cols="80"
-                                                class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
-                                                placeholder="Type a message..."></textarea>
-                                        </div>
-                                        <div class="text-center mt-6">
-                                            <a href="#"
-                                                class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                                role="button" style="transition: all 0.15s ease 0s;">
-                                                Send Message
-                                            </a>
-                                        </div>
-                                    </form>
-                                </div>
+
+                                @if (session('success'))
+                                    <div class="alert alert-success text-green-600">
+                                        {{ session('success') }}
+                                    </div>
+                                @elseif(session('error'))
+                                    <div class="alert alert-danger text-red-600">
+                                        {{ session('error') }}
+                                    </div>
+                                @endif
+                                <form action="{{ url('/send') }}" method="POST">
+                                    @csrf
+                                    <div class="relative w-full mb-3 mt-8">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="full-name">Full Name</label><input type="text" id="full-name"
+                                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                            placeholder="Full Name" style="transition: all 0.15s ease 0s;"  required/>
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="email">Email</label><input type="email" id="email"
+                                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                            placeholder="Email" style="transition: all 0.15s ease 0s;" required />
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="message">Message</label>
+                                        <textarea rows="4" cols="80" id="message"
+                                            class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                            placeholder="Type a message..." required></textarea>
+                                    </div>
+                                    <div class="text-center mt-6">
+                                        <button
+                                            class="btn bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                            role="button" type="submit" style="transition: all 0.15s ease 0s;">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
+
+
         <footer class="relative bg-black pt-8 pb-6">
             <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
                 style="height: 80px;">
