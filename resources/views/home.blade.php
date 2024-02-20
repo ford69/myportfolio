@@ -9,7 +9,7 @@
 
 <body>
     <div class="">
-        <header class="py-4 bg-black sm:py-6 fixed top-0 w-full z-10" x-data="{ expanded: false }">
+        <header class="py-4 bg-black bg-opacity-80 sm:py-6 fixed top-0 w-full z-10" x-data="{ expanded: false }">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between">
                     <div class="shrink-0">
@@ -244,17 +244,17 @@
                                 Want to Know more about me ? </span>
                         </h3>
                         <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-400">
-                            Don't let your uses guess by attaching tooltips and popoves to
-                            any element. Just make sure you enable them first via
-                            JavaScript.
+                            A versatile Full Stack Developer renowned for my exceptional Front-End
+                            skills and expertise in the TALL stack: Tailwind CSS,
+                             Alpine.js, Laravel / Vue.js, and MySQL.
                         </p>
                         <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-400">
-                            The kit comes with three pre-built pages to help you get started
-                            faster. You can change the text and images and you're good to
-                            go. Just make sure you enable them first via JavaScript.
+                            With a background spanning fintech, automations, event management, banking, and security,
+                            I specialize in crafting innovative solutions that drive efficiency and elevate user
+                            experiences. Let's collaborate to bring your digital projects to life!
                         </p>
                         <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                            class="font-bold text-gray-500 mt-8">Check Tailwind Starter Kit!</a>
+                            class="font-bold text-gray-500 mt-8">Check Github!</a>
                     </div>
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                         <div
@@ -574,20 +574,20 @@
                                     @csrf
                                     <div class="relative w-full mb-3 mt-8">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                            for="full-name">Full Name</label><input type="text" id="full-name"
+                                            for="full-name">Full Name</label><input type="text" id="full-name" name="full_name"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Full Name" style="transition: all 0.15s ease 0s;"  required/>
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                            for="email">Email</label><input type="email" id="email"
+                                            for="email">Email</label><input type="email" id="email" name="email"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Email" style="transition: all 0.15s ease 0s;" required />
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                             for="message">Message</label>
-                                        <textarea rows="4" cols="80" id="message"
+                                        <textarea id rows="4" cols="80" id="message"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Type a message..." required></textarea>
                                     </div>
