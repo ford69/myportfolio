@@ -16,17 +16,17 @@ class SendMailController extends Controller
         Log::info(json_encode($request));
 
         $request->validate([
-            'full-name' => 'required|string|max:30',
+            'full_name' => 'required|string|max:30',
             'email' => 'required|string|max:30',
-            'message' => 'required|string',
+            'content' => 'required|string',
         ]);
 
         Log::debug("[SendMailController]: validated");
 
         $data = array(
-            'full-name' => $request->fullname,
+            'full_name' => $request->full_name,
             'email' => $request->email,
-            'message' => $request->mesage
+            'content' => $request->content
         );
 
         try {
@@ -41,8 +41,11 @@ class SendMailController extends Controller
             //send mail to specific email
             Mail::to('clifford@myzeepay.com')->send($email);
 
+
             //Log Mail Sent succesfully
             Log::info('Mail sent Succesfully.',['email_data'=> $data]);
+
+            return redirect()->back()->with('success', 'Your message has been sent successfully');
 
         } catch (\Throwable $th) {
             //throw $th;

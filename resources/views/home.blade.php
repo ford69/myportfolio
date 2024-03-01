@@ -90,7 +90,7 @@
             <div class="px-4 mx-auto relativea sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
                     <div>
-
+                        <p class=" mt-2 text-lg font-normal text-gray-400 sm:mt-8">I AM..</p>
                         <h1 class=" text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">
                             Clifford Kwaku Kyereme
                             <span class="relative inline-flex sm:inline">
@@ -99,10 +99,7 @@
                                 <span class="relative"> Manu </span>
                             </span>
                         </h1>
-                        <p class="mt-4 text-lg font-normal text-gray-400 sm:mt-8">Im a software Developer From Ghana.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, praesentium? Corrupti
-                            quisquam, asperiores earum ea praesentium cum accusantium. Porro voluptates voluptatum, ex
-                            fugiat eum blanditiis ab temporibus? Quos, adipisci voluptate?
+                        <p class="mt-4 text-lg font-normal text-gray-400 sm:mt-8">And I'll bring your software solution to life.
                         </p>
 
                         <form action="#" method="POST" class="relative mt-8 rounded-full sm:mt-12">
@@ -562,7 +559,7 @@
                                 </p>
 
                                 @if (session('success'))
-                                    <div class="alert alert-success text-green-600">
+                                    <div class="alert alert-success text-green-600 font-bold">
                                         {{ session('success') }}
                                     </div>
                                 @elseif(session('error'))
@@ -574,7 +571,7 @@
                                     @csrf
                                     <div class="relative w-full mb-3 mt-8">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                            for="full-name">Full Name</label><input type="text" id="full-name" name="full_name"
+                                            for="full-name">Full Name</label><input type="text" id="full_name" name="full_name"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Full Name" style="transition: all 0.15s ease 0s;"  required/>
                                     </div>
@@ -586,8 +583,8 @@
                                     </div>
                                     <div class="relative w-full mb-3">
                                         <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                            for="message">Message</label>
-                                        <textarea id rows="4" cols="80" id="message"
+                                            for="content">Message</label>
+                                        <textarea id rows="4" cols="80" id="content" name="content"
                                             class="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-gray-900 rounded text-sm shadow focus:outline-none focus:ring w-full"
                                             placeholder="Type a message..." required></textarea>
                                     </div>
@@ -724,5 +721,7 @@
 
 
 </body>
+
+
 
 </html>
