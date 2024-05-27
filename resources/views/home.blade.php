@@ -152,11 +152,11 @@
 
 
 
-                        <div class="absolute inset-0">
+                        {{-- <div class="absolute inset-0">
                             <img class="object-cover w-full h-full opacity-50"
                                 src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png"
                                 alt="" />
-                        </div>
+                        </div> --}}
 
                         {{-- <img class="relative w-full max-w-md mx-auto" src="{{ asset('images/person-try.png') }}"
                             alt="" /> --}}
@@ -692,7 +692,7 @@
                         <div class="text-sm text-gray-600 font-semibold py-1">
                             Copyright © 2024 My Portfolio Website by
                             <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Clifford
-                                Manu</a>.
+                                Manu</a>
                         </div>
                     </div>
                 </div>
