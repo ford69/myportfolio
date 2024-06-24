@@ -61,9 +61,9 @@
                         <div
                             class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50">
                         </div>
-                        <a href="#" title=""
+                        <a href="https://github.com/ford69" title=""
                             class="relative inline-flex items-center justify-center px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full"
-                            role="button"> Github </a>
+                            role="button" target="_blank"> Github </a>
                     </div>
                 </div>
 
@@ -294,7 +294,7 @@
                 <div class="items-center flex flex-wrap">
                     <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
                         <img alt="..." class="max-w-full rounded-lg shadow-lg"
-                            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" />
+                            src="{{ asset('images/goal.jpg') }}" />
                     </div>
                     <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
                         <div class="md:pr-12">
@@ -302,11 +302,10 @@
                                 class="text-cyan-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-cyan-300">
                                 <i class="fas fa-rocket text-xl"></i>
                             </div>
-                            <h3 class="text-3xl font-semibold">A growing company</h3>
+                            <h3 class="text-3xl text-gray-200 font-semibold">Achievements</h3>
                             <p class="mt-4 text-lg leading-relaxed text-gray-400">
-                                The extension comes with three pre-built pages to help you get
-                                started faster. You can change the text and images and you're
-                                good to go.
+                                After some extensive training and practice here are some certifications
+                                 I achieved over the years.
                             </p>
                             <ul class="list-none mt-6">
                                 <li class="py-2">
@@ -318,7 +317,7 @@
                                         </div>
                                         <div>
                                             <h4 class="text-gray-400">
-                                                Carefully crafted components
+                                                API Security Architect Certification <b>(Issued by API Academy: January 2023)</b>
                                             </h4>
                                         </div>
                                     </div>
@@ -331,11 +330,13 @@
                                                     class="fab fa-html5"></i></span>
                                         </div>
                                         <div>
-                                            <h4 class="text-gray-400">Amazing page examples</h4>
+                                            <h4 class="text-gray-400">
+                                                Principles of Secure Coding Certification <b>(Issued by Udemy:February 2024)</b>
+                                            </h4>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="py-2">
+                                {{-- <li class="py-2">
                                     <div class="flex items-center">
                                         <div>
                                             <span
@@ -346,7 +347,7 @@
                                             <h4 class="text-gray-400">Dynamic components</h4>
                                         </div>
                                     </div>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -373,16 +374,14 @@
                     <div class=" bg-gray-900 rounded border border-cyan-500 ">
                         <div class="w-full h-48 overflow-hidden bg-gray-300">
                             <img class="w-full h-48"
-                                src="{{ asset('images/Screenshot 2023-01-30 at 8.35.15 AM.png') }}" alt="">
+                                src="{{ asset('images/products-1.png') }}" alt="">
                         </div>
                         <div class="p-4">
                             <div class="flex items-center text-sm">
                                 <span class="text-teal-500 font-semibold">Business</span>
                                 <span class="ml-4 text-gray-200">29 Nov, 2021</span>
                             </div>
-                            <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Vue.js and Laravel
-                                ecommerce
-                                application</p>
+                            <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Vue.js and Laravel ecommerce application</p>
                             <p class="text-gray-200 mt-1">Built an online shop for a Business.
                             </p>
                             <div class="flex items-center mt-4">
@@ -400,7 +399,7 @@
                     <div class="bg-gray-900 rounded border border-cyan-500">
                         <div class="w-full h-48 overflow-hidden bg-gray-300">
                             <img class="h-48"
-                                src="{{ asset('images/Screenshot 2024-01-18 at 12.13.14 PM (2).png') }}"
+                                src="{{ asset('images/portfolio/product-2.png') }}"
                                 alt="">
                         </div>
                         <div class="p-4">
@@ -428,7 +427,7 @@
                     <div class="bg-gray-900 rounded border border-cyan-500 ">
                         <div class="w-full h-48 overflow-hidden bg-gray-300">
                             <img class="h-48"
-                                src="{{ asset('images/Screenshot 2024-01-18 at 12.13.14 PM (2).png') }}"
+                                src="{{ asset('images/portfolio/product-3.png') }}"
                                 alt="">
                         </div>
                         <div class="p-4">
