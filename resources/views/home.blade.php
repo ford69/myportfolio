@@ -250,14 +250,14 @@
                             I specialize in crafting innovative solutions that drive efficiency and elevate user
                             experiences. Let's collaborate to bring your digital projects to life!
                         </p>
-                        <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                            class="font-bold text-gray-500 mt-8">Check Github!</a>
+                        <a href="https://github.com/ford69"
+                            class="font-bold text-gray-500 mt-8" target="_blank">Check Github!</a>
                     </div>
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                         <div
                             class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-black">
                             <img alt="..."
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                                src="{{ asset('images/me.jpeg') }}"
                                 class="w-full align-middle rounded-t-lg" />
                             <blockquote class="relative p-8 mb-4">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
@@ -267,12 +267,10 @@
                                     </polygon>
                                 </svg>
                                 <h4 class="text-xl font-bold text-gray-400">
-                                    Top Notch Services
+                                   About Me
                                 </h4>
                                 <p class="text-md font-light mt-2 text-gray-300">
-                                    The Arctic Ocean freezes every winter and much of the
-                                    sea-ice then thaws every summer, and that process will
-                                    continue whatever happens.
+
                                 </p>
                             </blockquote>
                         </div>
@@ -382,7 +380,7 @@
                                 <span class="ml-4 text-gray-200">29 Nov, 2021</span>
                             </div>
                             <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Vue.js and Laravel ecommerce application</p>
-                            <p class="text-gray-200 mt-1">Built an online shop for a Business.
+                            <p class="text-gray-200 mt-1">Ecommerce web application .
                             </p>
                             <div class="flex items-center mt-4">
                                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
@@ -405,12 +403,12 @@
                         <div class="p-4">
                             <div class="flex items-center text-sm">
                                 <span class="text-teal-500 font-semibold">Social</span>
-                                <span class="ml-4 text-gray-100">1 July, 2022</span>
+                                <span class="ml-4 text-gray-100">1 April, 2024</span>
                             </div>
                             <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Php Laravel Framework
                                 Website
                                 application</p>
-                            <p class="text-gray-200 mt-1">Built a website for a church in Ghana
+                            <p class="text-gray-200 mt-1">social chat wep application
                             </p>
                             <div class="flex items-center mt-4">
                                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
@@ -433,12 +431,12 @@
                         <div class="p-4">
                             <div class="flex items-center text-sm">
                                 <span class="text-teal-500 font-semibold">Business</span>
-                                <span class="ml-4 text-gray-100">10 Nov, 2023</span>
+                                <span class="ml-4 text-gray-100">10 Nov, 2022</span>
                             </div>
                             <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Php Laravel Alpine.js
-                                management system
+                                webapplication system
                             </p>
-                            <p class="text-gray-200 mt-1">Built a real-estate management system
+                            <p class="text-gray-200 mt-1">Real-estate management system
                             </p>
                             <div class="flex items-center mt-4">
                                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
@@ -463,9 +461,9 @@
                                 <span class="text-teal-500 font-semibold">Social</span>
                                 <span class="ml-4 text-gray-100">29 July, 2022</span>
                             </div>
-                            <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Flutter Mobile
-                                Application</p>
-                            <p class="text-gray-200 mt-1">Built a mobile application for an organization
+                            <p class="text-lg text-gray-100 font-semibold leading-tight mt-4">Spotify Playlist
+                                Generator</p>
+                            <p class="text-gray-200 mt-1">application for sorting music preferences
                             </p>
                             <div class="flex items-center mt-4">
                                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
@@ -497,9 +495,10 @@
                                 Want to connect ? </span>
                         </h2>
                         <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                            Put the potentially record low maximum sea ice extent tihs year
-                            down to low ice. According to the National Oceanic and
-                            Atmospheric Administration, Ted, Scambos.
+                            I'm always open to new opportunities and collaborations. Whether you're interested in discussing innovative projects,
+                             seeking a skilled software developer, or just want to network, feel free to reach out. Let's connect and explore how
+                             we can work together to achieve great things!
+
                         </p>
                     </div>
                 </div>
