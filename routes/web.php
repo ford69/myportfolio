@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::post('/send','App\Http\Controllers\SendMailController@sendMail');
+Route::get('/search-suggestions','App\Http\Controllers\SearchController@suggestions')->name('suggestions');

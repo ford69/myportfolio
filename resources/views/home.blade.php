@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -102,7 +104,7 @@
                         <p class="mt-4 text-lg font-normal text-gray-400 sm:mt-8">And I'll bring your software solution to life.
                         </p>
 
-                        <form action="#" method="POST" class="relative mt-8 rounded-full sm:mt-12">
+                        <form id="searchForm" action="#" method="GET" class="relative mt-8 rounded-full sm:mt-12">
                             <div class="relative">
                                 <div
                                     class="absolute rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500">
@@ -115,10 +117,11 @@
                                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                         </svg>
                                     </div>
-                                    <input type="email" name="" id=""
+                                    <input type="text" name="search" id="searchInput"
                                         placeholder="Find out about me ?"
                                         class="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 focus:border-transparent focus:ring-0" />
-                                </div>
+                                        <div class="absolute z-10 bg-black bg-opacity-80 text-white border border-gray-600 shadow-lg rounded-b-lg max-h-40 overflow-y-auto w-[calc(100%-2rem)] ml-4 hidden transition-all duration-300 ease-in-out" id="suggestionsContainer"></div>
+                                    </div>
                             </div>
                             <div class="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
                                 <button type="submit"
@@ -179,7 +182,7 @@
                                 <h6 class="text-xl text-white font-semibold">
                                     <span
                                         class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">
-                                        Front End Engineer </span>
+                                        Full Stack Developer </span>
                                 </h6>
                                 <p class="mt-2 mb-4 text-gray-400">
                                     Empowering users with seamless and responsive web applications, leveraging Vue.js,
@@ -269,8 +272,13 @@
                                 <h4 class="text-xl font-bold text-gray-400">
                                    About Me
                                 </h4>
-                                <p class="text-md font-light mt-2 text-gray-300">
-
+                                <p class="text-md font-light mt-2 text-gray-400">
+                                    I am a Ghanaian living in accra.I hold a bachelor's degree in Information Technology.
+                                    Since my college days, I've been dedicated to building diverse and innovative projects.
+                                    I have nearly 4 years of professional experience,
+                                    In my free time, you can often find me behind a console playing video games at the gym, playing football.
+                                    Explore my portfolio to see some of the projects I've worked on,
+                                    and feel free to reach out if you'd like to collaborate or learn more about my work.
                                 </p>
                             </blockquote>
                         </div>
@@ -502,7 +510,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap mt-12 justify-center">
+                {{-- <div class="flex flex-wrap mt-12 justify-center">
                     <div class="w-full lg:w-3/12 px-4 text-center">
                         <div
                             class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-cyan-500 inline-flex items-center justify-center">
@@ -512,8 +520,7 @@
                             Excelent Services
                         </h6>
                         <p class="mt-2 mb-4 text-gray-500">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
+
                         </p>
                     </div>
                     <div class="w-full lg:w-3/12 px-4 text-center">
@@ -525,8 +532,7 @@
                             Grow your market
                         </h5>
                         <p class="mt-2 mb-4 text-gray-500">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
+
                         </p>
                     </div>
                     <div class="w-full lg:w-3/12 px-4 text-center">
@@ -536,11 +542,10 @@
                         </div>
                         <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
                         <p class="mt-2 mb-4 text-gray-500">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
+
                         </p>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
         <!--Contact -->
@@ -615,19 +620,19 @@
                     <div class="w-full lg:w-6/12 px-4">
                         <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
                         <h5 class="text-lg mt-0 mb-2 text-gray-500">
-                            Find us on any of these platforms, we respond 1-2 business days.
+                            Find me on any of these platforms, I respond within 24hrs.
                         </h5>
                         <div class="mt-6">
                             <button
                                 class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                                 type="button">
                                 <i class="flex fab fa-twitter"></i></button><button
-                                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                                class="bg-white text-pink-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                                 type="button">
-                                <i class="flex fab fa-facebook-square"></i></button><button
-                                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                                <i class="flex fab fa-instagram"></i></button><button
+                                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                                 type="button">
-                                <i class="flex fab fa-dribbble"></i></button><button
+                                <i class="flex fab fa-linkedin-in"></i></button><button
                                 class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                                 type="button">
                                 <i class="flex fab fa-github"></i>
@@ -641,43 +646,42 @@
                                     Links</span>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://www.creative-tim.com/presentation">About Us</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">More About Me</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://blog.creative-tim.com">Blog</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">Blog</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://www.github.com/creativetimofficial">Github</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">Github</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">Free Products</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="w-full lg:w-4/12 px-4">
-                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other
-                                    Resources</span>
+                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Location & Contact
+                                    </span>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT
-                                            License</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">Tema Community 15 Accra, Ghana</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">P.O Box 6665 Tema - Ghana</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://creative-tim.com/privacy">Privacy Policy</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">+233 544 02 3250 / +233 503 98 4976</a>
                                     </li>
                                     <li>
-                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                                            href="https://creative-tim.com/contact-us">Contact Us</a>
+                                        <a class="text-gray-700 hover:text-gray-100 font-semibold block pb-2 text-sm"
+                                            href="#">cliffordmanu7@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -697,7 +701,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script>
         // Add smooth scrolling behavior to the navigation links
         document.querySelectorAll('.nav-link').forEach(anchor => {
@@ -715,8 +719,46 @@
                 }
             });
         });
-    </script>
 
+        const searchInput = document.getElementById('searchInput');
+        const suggestionsContainer = document.getElementById('suggestionsContainer');
+
+        searchInput.addEventListener('input', async () => {
+            const query = searchInput.value.toLowerCase();
+            if (query) {
+                try {
+                    const response = await axios.get(`/search-suggestions?query=${query}`);
+                    const suggestions = response.data;
+                    suggestionsContainer.innerHTML = '';
+                    if (suggestions.length > 0) {
+                        suggestions.forEach(suggestion => {
+                            const suggestionItem = document.createElement('div');
+                            suggestionItem.classList.add('suggestion-item');
+                            suggestionItem.textContent = suggestion;
+                            suggestionItem.addEventListener('click', () => {
+                                searchInput.value = suggestion;
+                                suggestionsContainer.innerHTML = '';
+                            });
+                            suggestionsContainer.appendChild(suggestionItem);
+                        });
+                        suggestionsContainer.style.display = 'block';
+                    } else {
+                        suggestionsContainer.style.display = 'none';
+                    }
+                } catch (error) {
+                    console.error('Error fetching suggestions:', error);
+                    suggestionsContainer.style.display = 'none';
+                }
+            } else {
+                suggestionsContainer.style.display = 'none';
+            }
+        });
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !suggestionsContainer.contains(e.target)) {
+                suggestionsContainer.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 
